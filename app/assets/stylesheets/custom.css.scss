@@ -23,14 +23,24 @@ html, body {
      height:  100%;
 }
 
-/* Center the container */
-/*.container {
-     width: 960px;
+.main-content {
      margin: auto;
-     border: 1px solid red;
-}*/
-
-
+     width:    960px;
+     padding-top: 20px;
+     margin-left: 40px;
+     p {
+       font-size: 40px;
+       color:  #FFF;
+     }
+}
+#intro {
+     font-size: 70px;
+     color:  #FFF;
+     text-shadow: 4px 2px 0 #555,
+                  0px -1px 0 #555,
+                  -1px 0px 0 #555,
+                  2px 1px 0 #555;
+}
 
 /* -----------------------------------------------------
  * HEADER / NAVIGATION
@@ -42,7 +52,7 @@ html, body {
      z-index:  1;
      margin-bottom: 60px;
      background: url('green_dust_scratch.png') center center;
-     opacity:  0.97;
+     /*opacity:  0.97;*/
      width:    100%;
      border-bottom: 1px solid #FFF;
      box-shadow: 0px 10px 10px rgba(51, 51, 51, 0.3);
@@ -65,7 +75,7 @@ header {
      position: fixed;
      z-index:  1;
      top: 120px;
-     left: 670px;
+     left: 570px;
 }
 
 .navigation li {
@@ -99,6 +109,10 @@ header {
 
 #slide1 {
      background-color:  #808CB0;
+     margin-top: 130px;
+     margin-bottom: -81px;
+     position: relative;
+     height:   33%;
 }
 
 /********************
@@ -114,7 +128,7 @@ header {
      left: -150px;
 }*/
 
-#slide2 img:nth-child(2){
+/*#slide2 img:nth-child(2){
      position: absolute;
      top: 300px;
      left: 100px;
@@ -130,7 +144,7 @@ header {
      position: absolute;
      top: 400px;
      left: 300px;
-}
+}*/
 
 /********************
      Slide 3
@@ -146,7 +160,7 @@ header {
      left: 300px;
 }*/
 
-#slide3 img:nth-child(2){
+/*#slide3 img:nth-child(2){
      position: absolute;
      top: 100px;
      left: 100px;
@@ -162,6 +176,53 @@ header {
      position: absolute;
      top: 450px;
      left: 300px;
+}*/
+
+#skill {
+     font-size: 40px;
+     color:    red;
+}
+code {
+     font-size: 30px;
+     line-height: 45px;
+     span {
+          font-size: 40px;
+     }
+}
+.syntax-highlight {
+     color:    #FF8100;
+     font-size: 30px;
+     text-shadow:  0px 1px 1px #000;
+
+}
+
+.syntax-highlight1 {
+     color:    blue;
+     font-size: 30px;
+}
+
+#full_stack {
+     margin-top: 30px;
+     font-size: 30px;
+}
+
+#result-btn {
+     width:  200px;
+     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#569700), to(#84E900));
+     border-radius: 10px;
+     border: 1px solid #FFF;
+     color:  #FFF;
+     box-shadow: 0px 1px 1px #000;
+     text-shadow:  0px 1px 1px #000;
+     &:hover {
+      -webkit-transition: all .1s ease-in-out;
+     }
+       &:active {
+            text-shadow: -1px -1px 1px #000;
+            box-shadow: inset 0px 1px 5px #000;
+            border: 1px solid #999;
+            color:  #F1F1F1;
+       }
 }
 
 /********************
@@ -170,15 +231,25 @@ header {
 
 #slide4 {
      background-image:url('whitediamond.png');
-     /*background-size: cover;*/
 }
 
 #slide4 .parallaxbg {
      position: absolute;
      right: 40px;
-     top: 40px;
+     top: 240px;
      font-size: 28px;
      color: rgba(51, 51, 51, 0.3);
+}
+
+
+#slide4 .slide-title {
+     color:    rgba(51, 51, 51, 0.15);
+          &:hover {
+          -webkit-transition: color .2s ease-in-out;
+          -moz-transition: color .2s ease-in-out;
+          transition: color .2s ease-in-out;
+          color:    rgba(51, 51, 51, 0.25);
+          }
 }
 
 /* -----------------------------------------------------
@@ -194,17 +265,18 @@ header {
 }
 
 .wrapper {
-     width:    960px;
+     width:    1060px;
      height:   200px;
      margin:   0 auto;
      position: relative;
 }
 
 .slide-title {
-     position: absolute;
-     bottom:   0px;
-     left:     45px;
-     font-size: 100px;
+     float: left;
+     width: 800px ;
+     margin-top:    20px;
+     margin-left: 20px;
+     font-size: 80px;
      font-weight:   bold;
      color:    rgba(255, 255, 255, 0.3);
           &:hover {
@@ -219,28 +291,19 @@ header {
 
 
 
-#slide4 .slide-title {
-     color:    rgba(51, 51, 51, 0.15);
-          &:hover {
-          -webkit-transition: color .2s ease-in-out;
-          -moz-transition: color .2s ease-in-out;
-          transition: color .2s ease-in-out;
-          color:    rgba(51, 51, 51, 0.25);
-          }
-}
-
 /*Button Element*/
 
-img#down-arrow {
-     background: url('orange_arrow.png');
+img.down-arrow {
+     background: url('orange_arrow.png') no-repeat center;
      width:    123px;
      height:   123px;
+     margin-top: 100px;
      display:  block;
-     position: absolute;
-     bottom:   7px;
-     left:     90%;
+     float:    right;
+     width:    120px;
+     margin-right:   -600px;
      opacity:  0.80;
-     border:   none;
+     border-radius: 100%;
           &:hover {
           -webkit-transition: all .2s ease-in-out;
           -moz-transition: all .2s ease-in-out;
