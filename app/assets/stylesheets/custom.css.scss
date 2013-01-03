@@ -6,8 +6,6 @@ Created:  12/28/2012 v1.0
 Completed:
 */
 
-
-
 /* -----------------------------------------------------
  * GENERAL SETUP
  *-----------------------------------------------------*/
@@ -25,7 +23,7 @@ html, body {
 
 .main-content {
      margin: auto;
-     width:    960px;
+     width:    1060px;
      padding-top: 20px;
      margin-left: 40px;
      p {
@@ -33,15 +31,89 @@ html, body {
        color:  #FFF;
      }
 }
-#intro {
-     font-size: 70px;
-     color:  #FFF;
-     text-shadow: 4px 2px 0 #555,
-                  0px -1px 0 #555,
-                  -1px 0px 0 #555,
-                  2px 1px 0 #555;
+
+/*Button Element*/
+img.down-arrow {
+     background: url('orange_arrow.png') no-repeat center;
+     width:    123px;
+     height:   123px;
+     /*margin-top: 100px;*/
+     /*display:  block;*/
+     /*float:    left;*/
+     /*width:    120px;*/
+     /*margin-left:   900px;*/
+     /*padding-right: 20px;*/
+     /*position: relative;*/
+     /*bottom: 33px;*/
+     /*left:     200px;*/
+     opacity:  0.80;
+     border-radius: 100%;
+          &:hover {
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+          cursor: pointer;
+          opacity:  1;
+          }
 }
 
+#down-arrow-1 {
+     margin-top: 78px;
+     display:  block;
+     float:    right;
+     margin-right:   50px;
+}
+
+#down-arrow-2 {
+     margin-top: 0px;
+     display:  block;
+     float:    right;
+     margin-right:   50px;
+}
+
+#down-arrow-3 {
+     margin-top: 0px;
+     display:  block;
+     float:    right;
+     margin-right:   50px;
+}
+
+/* -----------------------------------------------------
+ * MAIN SECTION
+ *-----------------------------------------------------*/
+
+.slide {
+     background-attachment: fixed;
+     width:    100%;
+     height:   100%;
+     position: relative;
+     box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+     width:    1060px;
+     height:   200px;
+     margin:   0 auto;
+     position: relative;
+}
+
+.slide-title {
+     float: left;
+     width: 900px ;
+     margin-top:    20px;
+     margin-left: 20px;
+     font-size: 80px;
+     font-weight:   bold;
+     color:    rgba(255, 255, 255, 0.3);
+          &:hover {
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+          color:    rgba(255, 255, 255, 0.7);
+          /*text-shadow: 0px 3px 3px #999; use same color as background but deeper*/
+          cursor:   pointer;
+          }
+}
 /* -----------------------------------------------------
  * HEADER / NAVIGATION
  *-----------------------------------------------------*/
@@ -49,10 +121,9 @@ html, body {
      position: fixed;
      top: 0px;
      left:     0px;
-     z-index:  1;
+     z-index:  10;
      margin-bottom: 60px;
      background: url('green_dust_scratch.png') center center;
-     /*opacity:  0.97;*/
      width:    100%;
      border-bottom: 1px solid #FFF;
      box-shadow: 0px 10px 10px rgba(51, 51, 51, 0.3);
@@ -109,11 +180,24 @@ header {
 
 #slide1 {
      background-color:  #808CB0;
-     margin-top: 130px;
-     margin-bottom: -81px;
+     margin-top: 90px;
+     margin-bottom: -100px;
+     padding:  20px;
      position: relative;
      height:   33%;
+     /*z-index: 9;*/
 }
+
+.intro {
+     font-size: 70px;
+     color:  #FFF;
+     text-shadow: 4px 2px 0 #555,
+                  0px -1px 0 #555,
+                  -1px 0px 0 #555,
+                  2px 1px 0 #555;
+}
+
+
 
 /********************
      Slide 2
@@ -121,7 +205,15 @@ header {
 
 #slide2 {
      background-color:  #ABD1D9;
+     margin-top: 79px;
+     margin-bottom: -200px;
+     position: relative;
+     height:   33%;
 }
+
+
+
+
 /*#slide2 img:first-child{ ******interferring with down button
      position: absolute;
      top: 700px;
@@ -152,6 +244,21 @@ header {
 
 #slide3 {
      background-color:   #D9FFF7;
+     margin-top: 99px;
+     margin-bottom: -100px;
+     position: relative;
+     height:   33%;
+}
+
+
+#slide3 .slide-title {
+     color:    rgba(51, 51, 51, 0.15);
+          &:hover {
+          -webkit-transition: color .2s ease-in-out;
+          -moz-transition: color .2s ease-in-out;
+          transition: color .2s ease-in-out;
+          color:    rgba(51, 51, 51, 0.25);
+          }
 }
 
 /*#slide3 img:first-child{
@@ -178,6 +285,9 @@ header {
      left: 300px;
 }*/
 
+/********************
+     "Code Block" on slide3
+ ********************/
 #skill {
      font-size: 40px;
      color:    red;
@@ -253,75 +363,7 @@ code {
 }
 
 /* -----------------------------------------------------
- * MAIN SECTION
- *-----------------------------------------------------*/
-
-.slide {
-     background-attachment: fixed;
-     width:    100%;
-     height:   100%;
-     position: relative;
-     box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-.wrapper {
-     width:    1060px;
-     height:   200px;
-     margin:   0 auto;
-     position: relative;
-}
-
-.slide-title {
-     float: left;
-     width: 800px ;
-     margin-top:    20px;
-     margin-left: 20px;
-     font-size: 80px;
-     font-weight:   bold;
-     color:    rgba(255, 255, 255, 0.3);
-          &:hover {
-          -webkit-transition: all .2s ease-in-out;
-          -moz-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
-          color:    rgba(255, 255, 255, 0.5);
-          /*text-shadow: 0px 3px 3px #999; use same color as background but deeper*/
-          cursor:   pointer;
-          }
-}
-
-
-
-/*Button Element*/
-
-img.down-arrow {
-     background: url('orange_arrow.png') no-repeat center;
-     width:    123px;
-     height:   123px;
-     margin-top: 100px;
-     display:  block;
-     float:    right;
-     width:    120px;
-     margin-right:   -600px;
-     opacity:  0.80;
-     border-radius: 100%;
-          &:hover {
-          -webkit-transition: all .2s ease-in-out;
-          -moz-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
-          cursor: pointer;
-          opacity:  1;
-          }
-}
-
-/* -----------------------------------------------------
- * ASIDE
- *-----------------------------------------------------*/
-
-
-
-
-/* -----------------------------------------------------
- * OPERATIONAL HACKS
+ * MISC
  *-----------------------------------------------------*/
 
 /* Box Model Hack */
@@ -337,11 +379,6 @@ img.down-arrow {
      white-space:   nowrap;
      overflow: hidden;
 */
-
-
-/* -----------------------------------------------------
- * MISC
- *-----------------------------------------------------*/
 
 /* Clear fix hack */
 .clearfix:after {
