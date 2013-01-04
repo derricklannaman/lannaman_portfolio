@@ -1,6 +1,6 @@
 $(function(){
 
- $('#full_stack').hide();
+ $('#full-stack').hide();
  $('#down-arrow-1').hide();
  $('#down-arrow-2').hide();
  $('#down-arrow-3').hide();
@@ -49,8 +49,14 @@ function show_slide1(){
 
 }
 
-
-
 function show_stack(){
-  $('#full_stack').fadeIn(1000);
+  $('#full-stack').fadeIn(700);
+  refresh_stack();
 }
+
+
+
+
+
+
+

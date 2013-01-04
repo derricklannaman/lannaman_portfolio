@@ -29,6 +29,7 @@ html, body {
      p {
        font-size: 40px;
        color:  #FFF;
+
      }
 }
 
@@ -37,15 +38,6 @@ img.down-arrow {
      background: url('orange_arrow.png') no-repeat center;
      width:    123px;
      height:   123px;
-     /*margin-top: 100px;*/
-     /*display:  block;*/
-     /*float:    left;*/
-     /*width:    120px;*/
-     /*margin-left:   900px;*/
-     /*padding-right: 20px;*/
-     /*position: relative;*/
-     /*bottom: 33px;*/
-     /*left:     200px;*/
      opacity:  0.80;
      border-radius: 100%;
           &:hover {
@@ -185,11 +177,12 @@ header {
      padding:  20px;
      position: relative;
      height:   33%;
-     /*z-index: 9;*/
+
 }
 
 .intro {
      font-size: 70px;
+     margin-bottom: -25px;
      color:  #FFF;
      text-shadow: 4px 2px 0 #555,
                   0px -1px 0 #555,
@@ -197,6 +190,14 @@ header {
                   2px 1px 0 #555;
 }
 
+.first-slide-content {
+     margin: 70px;
+     margin-bottom: 20px;
+     text-shadow: 0px 0px 6px #000;
+     span {
+          padding-left: 42px;
+     }
+}
 
 
 /********************
@@ -211,32 +212,13 @@ header {
      height:   33%;
 }
 
-
-
-
-/*#slide2 img:first-child{ ******interferring with down button
-     position: absolute;
-     top: 700px;
-     left: -150px;
-}*/
-
-/*#slide2 img:nth-child(2){
-     position: absolute;
-     top: 300px;
-     left: 100px;
+.second-slide-content {
+     margin: 20px 70px;
+     p {
+          color: #2A3C72;
+          text-shadow: 0px 0px 6px #FFF;
+     }
 }
-
-#slide2 img:nth-child(3){
-     position: absolute;
-     top: 600px;
-     left: 300px;
-}
-
-#slide2 img:nth-child(4){
-     position: absolute;
-     top: 400px;
-     left: 300px;
-}*/
 
 /********************
      Slide 3
@@ -311,9 +293,28 @@ code {
      font-size: 30px;
 }
 
-#full_stack {
+#full-stack {
      margin-top: 30px;
+     margin-left:   40px;
      font-size: 30px;
+     text-shadow: 0px 0px 6px #FFF;
+     .quote {
+          color: #38808D;
+     }
+     p {
+     font-size: 20px;
+     color:    #38808D;
+     margin-left: 30px;
+     }
+}
+
+#do-block {
+     margin: 40px;
+     background: #FFF;
+     border: 10px solid #38808D;
+     border-radius: 20px;
+     padding: 20px;
+
 }
 
 #result-btn {

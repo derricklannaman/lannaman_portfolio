@@ -14,28 +14,20 @@ Completed: -->
 
 	</head>
 	<body>
-
-			<!-- =============== 			Shared/Nav 		 =============== -->
-
+		<!-- Navigation is located in shared  -->
 
 			<!-- =============== 		START SECTION 	 =============== -->
 
 			<div class="slide" id="slide1" data-slide="1" data-stella-background-ratio="0.5">
-<!-- 				<div class="wrapper">
-					<img src="images/green_gobbler.png" data-stella-ratio="1.4" data-stellar-vertical-offset="-102" alt="">
-					<img src="images/green_gobbler.png" data-stella-ratio="1.5" data-stellar-vertical-offset="-53" alt="">
-					<img src="images/green_gobbler.png" data-stella-ratio="2.7" data-stellar-vertical-offset="-200" alt="">
-					<img src="images/green_gobbler.png" data-stella-ratio="1" data-stellar-vertical-offset="-200" alt="">
-				</div> -->
 
 				<div class="main-content">
 					<div class="first-slide-content">
 						<h1 class="intro">Hello. I am Derrick</h1>
 					  <p>
-							 Full stack Web Developer.<br/>
-								Web Development Immersive (General Assembly) alumni<br />
-								Two-time entreprenuer<br />
-								Chaser of Dreams
+							 &raquo;Full-stack Web Developer<br/>
+								<span>Web Development Immersive(General Assembly) Alumni<br /></span>
+								&raquo;Two-time Entreprenuer<br />
+								<span>Chaser of Dreams</span>
 						 </p>
 
 							<p>
@@ -57,19 +49,14 @@ Completed: -->
 <!-- =============  -->
 
 			<div class="slide" id="slide2" data-slide="2" data-stella-background-ratio="0.5">
-<!-- 				<div class="wrapper">
-					<img src="images/green_gobbler.png" data-stella-ratio="1.4" data-stellar-vertical-offset="-102" alt="">
-					<img src="images/green_gobbler.png" data-stella-ratio="1.5" data-stellar-vertical-offset="-53" alt="">
-					<img src="images/green_gobbler.png" data-stella-ratio="2.7" data-stellar-vertical-offset="-200" alt="">
-					<img src="images/green_gobbler.png" data-stella-ratio="1" data-stellar-vertical-offset="-200" alt="">
-				</div> -->
+
 
 				<div class="main-content">
 					<div class="second-slide-content">
 					<h1 class="intro">..doing in a place like this?</h1>
-					<p>
-						It started when my second business, Texas Crazy Wings needed a simple website. I had neither the time, nor most frustratingly, the basic knowledge of how to create it myself. So, I hired a designer who was able to translate <em><strong>my</strong> concepts and ideas</em> into a website and a seed was planted. Fast-forward a few years, and that seed had grown into a full-fledged bloom of desire to turn my ideas and the ideas of others into living, breathing applications.
-					</p>
+						<p>
+							It started when my second business, Texas Crazy Wings needed a simple website. I had neither the time, nor most frustratingly, the basic knowledge of how to create it myself. So, I hired a designer who was able to translate <em>my concepts and ideas</em> into a website and thus, a seed was sown. Fast-forward a few years, and that small seed had grown into a full-fledged bloom of desire to become a full stack developer and turn ideas into living, breathing applications.
+						</p>
 					</div><!-- End second-slide-content-->
 				</div><!-- End main-content -->
 
@@ -88,11 +75,8 @@ Completed: -->
 				<div class="main-content">
 					<div class="third-slide-content">
 					<h1 class="intro">The &#64;full_stack, baby!</h1>
-					<p>
-						Solidly versed &#42; in these web technologies:
-					</p>
 
-					<div id="do_block">
+					<div id="do-block">
 						<code> <!-- This section creates the "code block" on slide3 -->
 							 &lt;&#37; <span class="syntax-highlight1">&#64;full_stack</span>.each <span class="syntax-highlight">do</span> &#124;<span class="syntax-highlight1">skill</span>&#124;&#37;&gt; <br/>
 							 	 &nbsp; &nbsp;<span>"#&#123;</span>&nbsp;<button id="result-btn">Get Skills</button>&nbsp;<span>&#125;"</span>
@@ -101,17 +85,23 @@ Completed: -->
 						</code>
 				 </div>
 
-					<div id="full_stack">
-						<%= @quote %>
+					<div id="full-stack">
+						<span class="quote"><%= @quote %></span>
 						<%-	@full_stack.each do |skill| %>
 							 	<span id="skill"><%=	skill %></span>
 						<% end %>
-						<%= " and I continue to develop these skills everyday!" %><br/>
-				 </div>
+						<span class="quote"><%= " and I continue to develop these skills, and more, everyday!" %></span><br/>
 
-				 <div>
+				 	<p>
+				 		A fist full of gems:<br />
+				 				pg, annotate, carrierwave, fog, AWS, pry <br/>
+				 	</p>
 
-				 </div>
+						<p>
+							Solidly versed &#42; in these web technologies:
+						</p>
+				 </div><!-- End full-stack-->
+
 					</div><!-- third-slide-content-->
 				</div><!-- End main-content -->
 
