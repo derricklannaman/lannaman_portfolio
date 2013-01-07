@@ -11,14 +11,11 @@ Completed:
  *-----------------------------------------------------*/
 
  /*FONTS*/
-     /*@import url(http://fonts.googleapis.com/css?family=Fjalla+One);*/
-     /*@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative);*/
      @import url(http://fonts.googleapis.com/css?family=Cantata+One|Allura|Shadows+Into+Light|Great+Vibes|Fjalla+One|Cinzel+Decorative:400);
 
 
 html, body {
      font-family: 'Fjalla One', sans-serif;
-     /*font-family: 'Cantata One', serif;*/
      width:  100%;
      height:  100%;
 }
@@ -82,6 +79,7 @@ img.down-arrow {
      height:   100%;
      position: relative;
      box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.3);
+     border-top: 1px solid #FFF;
 }
 
 .slide-title {
@@ -104,25 +102,18 @@ img.down-arrow {
  * HEADER / NAVIGATION
  *-----------------------------------------------------*/
 #top-nav {
-     position: fixed;
-     top: 0px;
-     left:     0px;
+     float:    left;
      z-index:  10;
-     margin-bottom: 60px;
      background: url('green_dust_scratch.png') center center;
      width:    100%;
-     border-bottom: 1px solid #FFF;
+     /*border-bottom: 1px solid #FFF;*/
      box-shadow: 0px 10px 10px rgba(51, 51, 51, 0.3);
-}
-
-#logo {
-     font-family: 'Great Vibes', cursive;
-     font-size: 50px;
+     /*z-index: 10;*/
 }
 
 header {
-     margin-top: 80px;
-     margin-bottom: 60px;
+     /*margin-top: 80px;*/
+     /*margin-bottom: 60px;*/
 }
 
 #brand {
@@ -134,30 +125,29 @@ header {
 }
 
 .navigation {
-     position: fixed;
+     float:    left;
+     width:    950px;
      z-index:  1;
-     top: 120px;
-     left: 570px;
 }
 
 .navigation li {
      float:    left;
      color: #00675C;
      display:  block;
-     padding:  0 10px;
+     padding:  0 5px;
      line-height: 30px;
      margin-bottom: 2px;
      text-align: left;
-     width: 180px;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
+     width: 140px;
+     -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     transition: all .2s ease-in-out;
           &:hover,.active {
-          font-size: 23px;
+          font-size: 18px;
           color:    #FFF;
           text-shadow:   0px 2px 1px #00544B;
           cursor: pointer;
-          width: 180px!important;
+          width: 140px!important;
           }
 }
 
@@ -171,11 +161,11 @@ header {
 
 #slide1 {
      background-color:  #808CB0;
-     margin-top: 90px;
      margin-bottom: -100px;
      padding:  20px;
      position: relative;
      height:   33%;
+     /*border-bottom: 10px solid #FFF;*/
 
 }
 
@@ -191,9 +181,8 @@ header {
 }
 
 .first-slide-content {
-     margin: 70px;
-     margin-bottom: 20px;
-     text-shadow: 0px 0px 6px #000;
+     margin: -65px 70px 20px 70px;
+     text-shadow: 0px 0px 4px #000;
      span {
           padding-left: 42px;
      }
@@ -207,7 +196,7 @@ header {
 #slide2 {
      background-color:  #ABD1D9;
      margin-top: 79px;
-     margin-bottom: -200px;
+     margin-bottom: -100px;
      position: relative;
      height:   33%;
 }
@@ -216,7 +205,7 @@ header {
      margin: 20px 70px;
      p {
           color: #2A3C72;
-          text-shadow: 0px 0px 6px #FFF;
+          text-shadow: 0px 0px 4px #FFF;
      }
 }
 
@@ -227,7 +216,6 @@ header {
 #slide3 {
      background-color:   #D9FFF7;
      margin-top: 99px;
-     margin-bottom: -100px;
      position: relative;
      height:   33%;
 }
@@ -282,10 +270,19 @@ code {
      color:    #38808D;
      margin-left: 30px;
      }
+          #disclaimer {
+          font-family: 'Shadows Into Light', cursive;
+          font-size: 14px;
+          }
 }
-.disclaimer {
+
+#full-stack p:nth-of-type(2) {
      font-family: 'Shadows Into Light', cursive;
+     color: red;
+     padding-left: 20px;
 }
+
+
 
 #do-block {
      margin: 40px;
@@ -318,12 +315,17 @@ code {
 /********************
      Slide 4
  ********************/
-
-#slide4 {
-     background-image:url('whitediamond.png');
+.fourth-slide-content {
+     margin-left:   186px;
 }
 
-#slide4 .parallaxbg {
+#slide4 {
+     background: #FFE591;
+     position: relative;
+     height:   33%;
+}
+
+#slide4 .view-project {
      position: absolute;
      right: 40px;
      top: 240px;
@@ -340,6 +342,35 @@ code {
           transition: color .2s ease-in-out;
           color:    rgba(51, 51, 51, 0.25);
           }
+}
+
+.project {
+     float:    left;
+     width:    400px;
+     height:   350px;
+     margin:   5px;
+     background: url('rails.png');
+}
+
+
+
+#slide5 {
+     background-image:url('whitediamond.png');
+     font-family: 'Cinzel Decorative', cursive;
+     /*font-family: 'Cantata One', serif;*/
+     font-size: 14px;
+     padding-left: 40px;
+     padding-right: 40px;
+     margin-bottom: 20px;
+}
+
+#slide5 h2 {
+     /*background: #EEE;*/
+     text-align: center;
+     opacity: .4;
+     padding:  5px;
+     border-bottom: 1px solid #000;
+     /*border-top: 1px solid #000;*/
 }
 
 /* -----------------------------------------------------
