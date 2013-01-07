@@ -15,18 +15,18 @@ $(function(){
  $('#question-2').click(show_slide2);
  $('#question-3').click(show_slide3);
  $('.view-project').click(show_slide4);
- $('#screenshots').hover(show_caption, hide_caption);
+ // $('#screenshots').hover(show_caption, hide_caption);
 
 });
 
 
-function show_caption(){
- alert('it works');
-}
+// function show_caption(){
+//  // alert('stop');
+// }
 
-function hide_caption(){
- alert('it works again');
-}
+// function hide_caption(){
+//  // alert('shit');
+// }
 
 
 function show_slide4(){
