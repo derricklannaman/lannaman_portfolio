@@ -20,14 +20,6 @@ $(function(){
 });
 
 
-// function show_caption(){
-//   alert('stop');
-// }
-
-// function hide_caption(){
-//  alert('shit');
-// }
-
 
 function show_slide4(){
  $('#slide4').css({
