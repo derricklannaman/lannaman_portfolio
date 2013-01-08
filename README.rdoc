@@ -1,4 +1,4 @@
-The Lannaman Reclamation Project is the title of my portfolio. Although, it is mostly static web pages, it is built on top of Rails.
+The Lannaman Reclamation Project is the title of my portfolio. Although, it is mostly static web pages, it is built on top of Rails, just because I can.
 
 • RECLAMATION (noun)
   1. rescuing from error and returning to a rightful course
