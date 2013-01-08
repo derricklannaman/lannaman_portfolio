@@ -313,11 +313,11 @@ code {
 }
 
 /********************
-     Slide 4
+     Slide 4 - PROJECTS
  ********************/
 .fourth-slide-content {
-     margin-left:   186px;
-     margin-bottom: 150px;
+     margin-left:   80px;
+     margin-bottom: -100px;
 }
 
 #slide4 {
@@ -329,13 +329,14 @@ code {
 #slide4 .view-project {
      position: absolute;
      right: 40px;
-     top: 240px;
+     top: 140px;
      font-size: 28px;
      color: rgba(51, 51, 51, 0.3);
 }
 
 
 #slide4 .slide-title {
+     margin-top:    80px;
      color:    rgba(51, 51, 51, 0.15);
           &:hover {
           -webkit-transition: color .2s ease-in-out;
@@ -358,6 +359,8 @@ code {
      float:    left;
      width:    467px;
      height:   279px;
+     margin-left:   22px;
+     margin-bottom: 70px;
      background-color: #FFF;
      border:   20px solid rgba(0,0,0, 0.1);
      padding:  0px;
@@ -395,11 +398,13 @@ code {
 }
 
 #screenshots {
-     margin-top: 30px;
-     margin-bottom: 40px;
+     margin-top: 10px;
+     margin-bottom: 5px;
 }
 
-
+/********************
+     Slide 5 - RESUME
+ ********************/
 
 #slide5 {
      background-image:url('whitediamond.png');

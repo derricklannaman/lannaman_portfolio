@@ -6,6 +6,7 @@ class HomeController < ApplicationController
   quotes << "Yeah, I'm comfortable with " << "I'm constantly learning new things in " << "I Love " << "Because hard work pays off, I know " << "I dream in " << "Practice only makes for improvement. So, I practice " << "The road to full-stack enlightenment is paved with "
   @quote = quotes.sort.sample
 
+  @beautiflow_url = "http://damp-badlands-6555.herokuapp.com/"
   @foodie_url = "http://shrouded-ravine-1795.herokuapp.com/"
 	end
 
