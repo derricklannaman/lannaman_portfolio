@@ -122,12 +122,17 @@ Completed: -->
 				<div class="main-content">
 				<div class="fourth-slide-content">
 					<div id="screenshots">
-					<%= image_tag('foodie_image.png', :alt => "foodie app screenshot",  class: "project")  %>
-					<%= image_tag('foodie_image.png', :alt => "foodie app screenshot",  class: "project")  %>
+				 <div class="window-box">
+					<%= link_to(image_tag('foodie_image.png', :alt => "foodie app screenshot",  class: "project"), @foodie_url, :target => "_blank")  %>
+					<div>
 
-					<%= image_tag('foodie_image.png', :alt => "foodie app screenshot",  class: "project")  %>
+					</div>
+					</div>
+					<%#= image_tag('foodie_image.png', :size => '400x220',:alt => "foodie app screenshot",  class: "project") %>
 
-					<%= image_tag('foodie_image.png', :alt => "foodie app screenshot",  class: "project")  %>
+					<%#= image_tag('foodie_image.png', :size => '400x220',:alt => "foodie app screenshot",  class: "project")  %>
+
+					<%#= image_tag('foodie_image.png', :size => '400x220',:alt => "foodie app screenshot",  class: "project")  %>
 				 </div>
 					<div class="clear"></div>
 					<!-- <a class="button" id="btn-4" data-slide="4"></a> -->
