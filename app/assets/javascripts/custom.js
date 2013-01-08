@@ -8,6 +8,7 @@ $(function(){
  $('.second-slide-content').hide();
  $('.third-slide-content').hide();
  $('.fourth-slide-content').hide();
+ $('.light-box-caption').hide();
 
  $('#result-btn').click(show_stack);
 
@@ -15,9 +16,19 @@ $(function(){
  $('#question-2').click(show_slide2);
  $('#question-3').click(show_slide3);
  $('.view-project').click(show_slide4);
- // $('#screenshots').hover(show_caption, hide_caption);
+ $('#screenshots').hover(show_caption, hide_caption);
 
 });
+
+function show_caption(){
+  $('.light-box-caption').slideDown(500);
+
+}
+
+function hide_caption(){
+  $('.light-box-caption').slideUp(500);
+
+}
 
 
 
