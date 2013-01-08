@@ -16,18 +16,31 @@ $(function(){
  $('#question-2').click(show_slide2);
  $('#question-3').click(show_slide3);
  $('.view-project').click(show_slide4);
- $('#screenshots').hover(show_caption, hide_caption);
+ $('#beautiflow-light-box').hover(show_beautiflow_caption, hide_beautiflow_caption);
+ $('#foodie-light-box').hover(show_foodie_caption, hide_foodie_caption);
+ $('#codeGPS-light-box').hover(show_codeGPS_caption, hide_codeGPS_caption);
 
 });
 
-function show_caption(){
-  $('.light-box-caption').slideDown(500);
-
+function show_codeGPS_caption(){
+  $('#codeGPS-caption').slideDown(500);
+}
+function hide_codeGPS_caption(){
+  $('#codeGPS-caption').slideUp(500);
 }
 
-function hide_caption(){
-  $('.light-box-caption').slideUp(500);
+function show_foodie_caption(){
+  $('#foodie-caption').slideDown(500);
+}
+function hide_foodie_caption(){
+  $('#foodie-caption').slideUp(500);
+}
 
+function show_beautiflow_caption(){
+  $('#beautiflow-caption').slideDown(500);
+}
+function hide_beautiflow_caption(){
+  $('#beautiflow-caption').slideUp(500);
 }
 
 

@@ -390,7 +390,12 @@ code {
      border-bottom-left-radius: 30px;
      border-bottom-right-radius: 30px;
 }
-
+.light-box-caption p {
+     color:    #FFF;
+     font-size: 12px;
+     text-align: center;
+     margin-top:    -10px;
+}
 .light-box-caption h3 {
      margin-top: 18px;
      color:    #FFF;
