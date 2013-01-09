@@ -18,15 +18,15 @@ $(function(){
  $('.view-project').click(show_slide4);
  $('#beautiflow-light-box').hover(show_beautiflow_caption, hide_beautiflow_caption);
  $('#foodie-light-box').hover(show_foodie_caption, hide_foodie_caption);
- $('#codeGPS-light-box').hover(show_codeGPS_caption, hide_codeGPS_caption);
+ $('#susunami-light-box').hover(show_susunami_caption, hide_susunami_caption);
 
 });
 
-function show_codeGPS_caption(){
-  $('#codeGPS-caption').slideDown(500);
+function show_susunami_caption(){
+  $('#susunami-caption').slideDown(500);
 }
-function hide_codeGPS_caption(){
-  $('#codeGPS-caption').slideUp(500);
+function hide_susunami_caption(){
+  $('#susunami-caption').slideUp(500);
 }
 
 function show_foodie_caption(){

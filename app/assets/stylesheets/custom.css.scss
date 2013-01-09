@@ -336,7 +336,7 @@ code {
 
 
 #slide4 .slide-title {
-     margin-top:    80px;
+     margin-top:    85px;
      color:    rgba(51, 51, 51, 0.15);
           &:hover {
           -webkit-transition: color .2s ease-in-out;
@@ -387,20 +387,20 @@ code {
      height:   75px;
      background: rgba(230, 206, 130, 0.5);
      border:   2px solid rgba(230, 206, 130, 1);
-     border-bottom-left-radius: 30px;
-     border-bottom-right-radius: 30px;
+     p {
+          color:    #FFF;
+          font-size: 12px;
+          text-align: center;
+          margin-top:    -10px;
+     }
+
+     h3 {
+          margin-top: 18px;
+          color:    #FFF;
+          text-align: center;
+     }
 }
-.light-box-caption p {
-     color:    #FFF;
-     font-size: 12px;
-     text-align: center;
-     margin-top:    -10px;
-}
-.light-box-caption h3 {
-     margin-top: 18px;
-     color:    #FFF;
-     text-align: center;
-}
+
 
 #screenshots {
      margin-top: 10px;
@@ -413,8 +413,8 @@ code {
 
 #slide5 {
      background-image:url('whitediamond.png');
-     font-family: 'Cinzel Decorative', cursive;
-     /*font-family: 'Cantata One', serif;*/
+     /*font-family: 'Cinzel Decorative', cursive;*/
+     font-family: 'Cantata One', serif;
      font-size: 14px;
      padding-left: 40px;
      padding-right: 40px;
@@ -422,12 +422,10 @@ code {
 }
 
 #slide5 h2 {
-     /*background: #EEE;*/
      text-align: center;
      opacity: .4;
      padding:  5px;
      border-bottom: 1px solid #000;
-     /*border-top: 1px solid #000;*/
 }
 
 /* -----------------------------------------------------
