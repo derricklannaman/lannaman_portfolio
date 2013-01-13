@@ -9,7 +9,7 @@ class HomeController < ApplicationController
   @full_stack = %w(HTML5, CSS3, Sass, Javascript, jQuery, Git, Ruby, Rails, TDD, ajax)
 
   @susunami_url = "http://secret-wildwood-4788.herokuapp.com/"
-  @beautiflow_url = "http://damp-badlands-6555.herokuapp.com/"
+  @beautiflow_url = "http://www.beautiflow.me"
   @foodie_url = "http://shrouded-ravine-1795.herokuapp.com/"
 	end
 
