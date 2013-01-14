@@ -99,24 +99,15 @@ img.down-arrow {
           }
 }
 
-.main-question {
-     /*margin-top:  -30px;*/
-}
-
-
 /* -----------------------------------------------------
  * HEADER / NAVIGATION
  *-----------------------------------------------------*/
 #top-nav {
-     /*float:    left;*/
-     position: fixed;
-     top: 0;
-     left:     0;
+     float:    left;
      z-index:  10;
      background: url('green_dust_scratch.png') center center;
      width:    100%;
      box-shadow: 0px 10px 10px rgba(51, 51, 51, 0.3);
-     border-bottom: 1px solid #FFF;
 }
 
 #brand {
@@ -136,6 +127,7 @@ img.down-arrow {
      float:    left;
      width:    950px;
      z-index:  1;
+     margin-bottom: 30px;
 }
 
 .navigation li {
@@ -169,10 +161,10 @@ img.down-arrow {
 
 #slide1 {
      background-color:  #808CB0;
-     margin-top: 140px;
+     /*margin-top: 10px;*/
      margin-bottom: -100px;
      padding:  20px;
-     box-shadow: none;
+     box-shadow: inset 0px 10px 10px rgba(51, 51, 51, 0.3);
      position: relative;
      height:   25%;
 }
@@ -208,8 +200,8 @@ img.down-arrow {
 
 #slide2 {
      background-color:  #ABD1D9;
-     margin-top: 79px;
      margin-bottom: -100px;
+     margin-top: 99px;
      position: relative;
      height:   25%;
 }
@@ -233,6 +225,7 @@ img.down-arrow {
 #slide3 {
      background-color:   #D9FFF7;
      margin-top: 99px;
+     margin-bottom: -20px;
      position: relative;
      height:   25%;
 }
@@ -342,16 +335,8 @@ code {
      background: #FFE591;
      position: relative;
      height:   25%;
+     margin-bottom: -20px;
 }
-
-#slide4 .view-project {
-     position: absolute;
-     right: 40px;
-     top: 140px;
-     font-size: 28px;
-     color: rgba(51, 51, 51, 0.3);
-}
-
 
 #slide4 .slide-title {
      margin-top:    85px;

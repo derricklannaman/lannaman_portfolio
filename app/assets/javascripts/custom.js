@@ -88,7 +88,7 @@ function show_slide1(){
 
 function show_stack(){
   $('#full-stack').fadeIn(700);
-  refresh_stack();
+  $('#do-block').remove();
 }
 
 
