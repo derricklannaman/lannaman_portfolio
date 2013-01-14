@@ -108,11 +108,15 @@ img.down-arrow {
  * HEADER / NAVIGATION
  *-----------------------------------------------------*/
 #top-nav {
-     float:    left;
+     /*float:    left;*/
+     position: fixed;
+     top: 0;
+     left:     0;
      z-index:  10;
      background: url('green_dust_scratch.png') center center;
      width:    100%;
      box-shadow: 0px 10px 10px rgba(51, 51, 51, 0.3);
+     border-bottom: 1px solid #FFF;
 }
 
 #brand {
@@ -165,8 +169,10 @@ img.down-arrow {
 
 #slide1 {
      background-color:  #808CB0;
+     margin-top: 140px;
      margin-bottom: -100px;
      padding:  20px;
+     box-shadow: none;
      position: relative;
      height:   25%;
 }
