@@ -15,7 +15,7 @@ $(function(){
  $('#question-1').click(show_slide1);
  $('#question-2').click(show_slide2);
  $('#question-3').click(show_slide3);
- $('.view-project').click(show_slide4);
+ $('#question-4').click(show_slide4);
  $('#beautiflow-light-box').hover(show_beautiflow_caption, hide_beautiflow_caption);
  $('#foodie-light-box').hover(show_foodie_caption, hide_foodie_caption);
  $('#susunami-light-box').hover(show_susunami_caption, hide_susunami_caption);
@@ -50,7 +50,7 @@ function show_slide4(){
       height:   '100%'
     });
  $('.fourth-slide-content').fadeIn(1500);
- $('.view-project').fadeOut(700);
+ // $('.view-project').fadeOut(700);
 }
 
 function show_slide3(){
@@ -88,7 +88,7 @@ function show_slide1(){
 
 function show_stack(){
   $('#full-stack').fadeIn(700);
-  refresh_stack();
+  $('#do-block').remove();
 }
 
 
