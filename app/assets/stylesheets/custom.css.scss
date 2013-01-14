@@ -20,13 +20,13 @@ html, body {
      height:  100%;
 }
 
-.main-content {
+.container {
      margin: auto;
-     width:    1060px;
+     width:    960px;
      padding-top: 20px;
      margin-left: 40px;
      p {
-       font-size: 40px;
+       font-size: 25px;
        color:  #FFF;
 
      }
@@ -51,7 +51,7 @@ img.down-arrow {
 
 #down-arrow-1 {
      margin-top: 78px;
-     display:  block;
+     display:  inline-block;
      float:    right;
      margin-right:   50px;
 }
@@ -85,10 +85,10 @@ img.down-arrow {
 
 .slide-title {
      float: left;
-     width: 900px ;
-     margin-top:    20px;
+     width: 800px ;
+     margin-top:    0px;
      margin-left: 20px;
-     font-size: 80px;
+     font-size: 60px !important;
      font-weight:   bold;
      color:    rgba(255, 255, 255, 0.3);
           &:hover {
@@ -99,6 +99,7 @@ img.down-arrow {
           cursor:   pointer;
           }
 }
+
 /* -----------------------------------------------------
  * HEADER / NAVIGATION
  *-----------------------------------------------------*/
@@ -107,14 +108,7 @@ img.down-arrow {
      z-index:  10;
      background: url('green_dust_scratch.png') center center;
      width:    100%;
-     /*border-bottom: 1px solid #FFF;*/
      box-shadow: 0px 10px 10px rgba(51, 51, 51, 0.3);
-     /*z-index: 10;*/
-}
-
-header {
-     /*margin-top: 80px;*/
-     /*margin-bottom: 60px;*/
 }
 
 #brand {
@@ -122,13 +116,19 @@ header {
      color:    #FFF;
      font-size: 30px;
      text-shadow:   0px 2px 1px #00544B;
-     margin-left: 496px;
+     margin-left: 125px !important;
+     margin-bottom: -3px;
+}
+
+#brand span {
+     font-size: 20px;
 }
 
 .navigation {
      float:    left;
      width:    950px;
      z-index:  1;
+     margin-bottom: 30px;
 }
 
 .navigation li {
@@ -162,18 +162,18 @@ header {
 
 #slide1 {
      background-color:  #808CB0;
+     /*margin-top: 10px;*/
      margin-bottom: -100px;
      padding:  20px;
+     box-shadow: inset 0px 10px 10px rgba(51, 51, 51, 0.3);
      position: relative;
-     height:   33%;
-     /*border-bottom: 10px solid #FFF;*/
-
+     height:   25%;
 }
 
 .intro {
      font-family: 'Cantata One', serif;
-     font-size: 63px;
-     margin-bottom: -25px;
+     font-size: 50px;
+     margin-bottom: -10px;
      color:  #FFF;
      text-shadow: 4px 2px 0 #2A3C72,
                   0px -1px 0 #2A3C72,
@@ -182,11 +182,16 @@ header {
 }
 
 .first-slide-content {
-     margin: -65px 70px 20px 70px;
+     margin: -65px 70px -20px 70px;
      text-shadow: 0px 0px 4px #000;
      span {
           padding-left: 42px;
      }
+}
+
+#question-panel-1 {
+     margin-top: -80px;
+     margin-bottom: -80px;
 }
 
 
@@ -196,10 +201,10 @@ header {
 
 #slide2 {
      background-color:  #ABD1D9;
-     margin-top: 79px;
      margin-bottom: -100px;
+     margin-top: 99px;
      position: relative;
-     height:   33%;
+     height:   25%;
 }
 
 .second-slide-content {
@@ -210,6 +215,10 @@ header {
      }
 }
 
+#question-panel-2 {
+     margin-bottom: -100px;
+}
+
 /********************
      Slide 3
  ********************/
@@ -217,8 +226,9 @@ header {
 #slide3 {
      background-color:   #D9FFF7;
      margin-top: 99px;
+     margin-bottom: -20px;
      position: relative;
-     height:   33%;
+     height:   25%;
 }
 
 
@@ -230,6 +240,10 @@ header {
           transition: color .2s ease-in-out;
           color:    rgba(51, 51, 51, 0.25);
           }
+}
+
+#question-panel-3 {
+     margin-bottom: -100px;
 }
 
 /********************
@@ -283,15 +297,12 @@ code {
      padding-left: 20px;
 }
 
-
-
 #do-block {
      margin: 40px;
      background: #FFF;
      border: 10px solid #38808D;
      border-radius: 20px;
      padding: 20px;
-
 }
 
 #result-btn {
@@ -324,17 +335,9 @@ code {
 #slide4 {
      background: #FFE591;
      position: relative;
-     height:   33%;
+     height:   25%;
+     margin-bottom: -20px;
 }
-
-#slide4 .view-project {
-     position: absolute;
-     right: 40px;
-     top: 140px;
-     font-size: 28px;
-     color: rgba(51, 51, 51, 0.3);
-}
-
 
 #slide4 .slide-title {
      margin-top:    85px;
@@ -347,8 +350,13 @@ code {
           }
 }
 
+#question-panel-4 {
+     margin-top: -50px;
+     margin-bottom: -100px;
+}
+
+
 .project {
-     /*float:    left;*/
      width:    370px;
      height:   200px;
      margin: 20px 10px 10px 30px;
@@ -361,7 +369,7 @@ code {
      width:    467px;
      height:   279px;
      margin-left:   22px;
-     margin-bottom: 70px;
+     margin-bottom: 40px;
      background-color: #FFF;
      border:   20px solid rgba(0,0,0, 0.1);
      padding:  0px;
@@ -414,7 +422,6 @@ code {
 
 #slide5 {
      background-image:url('whitediamond.png');
-     /*font-family: 'Cinzel Decorative', cursive;*/
      font-family: 'Cantata One', serif;
      font-size: 14px;
      padding-left: 40px;
