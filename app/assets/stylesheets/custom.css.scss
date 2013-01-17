@@ -287,7 +287,7 @@ code {
      }
           #disclaimer {
           font-family: 'Shadows Into Light', cursive;
-          font-size: 14px;
+          font-size: 10px;
           }
 }
 
@@ -427,6 +427,10 @@ code {
      padding-left: 40px;
      padding-right: 40px;
      margin-bottom: 20px;
+     p {
+          color:    #999;
+          font-size: 17px;
+     }
 }
 
 #slide5 h2 {
@@ -434,6 +438,10 @@ code {
      opacity: .4;
      padding:  5px;
      border-bottom: 1px solid #000;
+}
+
+footer {
+     margin-top: 20px;
 }
 
 /* -----------------------------------------------------
