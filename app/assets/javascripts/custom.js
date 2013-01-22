@@ -1,5 +1,13 @@
 $(function(){
 
+ $('#top-nav').hide();
+ $('#slide1').hide();
+ $('#slide2').hide();
+ $('#slide3').hide();
+ $('#slide4').hide();
+ $('#slide5').hide();
+
+
  $('#full-stack').hide();
  $('#down-arrow-1').hide();
  $('#down-arrow-2').hide();
@@ -21,6 +29,17 @@ $(function(){
  $('#susunami-light-box').hover(show_susunami_caption, hide_susunami_caption);
 
 });
+
+// Onload fade in intro of page
+$(function() {
+  $('#top-nav').fadeIn(1000);
+  $('#slide1').delay(300).fadeIn(1200);
+  $('#slide2').delay(600).fadeIn(1200);
+  $('#slide3').delay(900).fadeIn(1200);
+  $('#slide4').delay(1200).fadeIn(1400);
+  $('#slide5').delay(1500).fadeIn(1400);
+});
+
 
 function show_susunami_caption(){
   $('#susunami-caption').slideDown(500);
