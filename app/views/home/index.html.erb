@@ -91,16 +91,12 @@ Completed: -->
 						<%-	@full_stack.each do |skill| %>
 							 	<span id="skill"><%=	skill %></span>
 						<% end %>
-						<span class="quote"><%= " and I continue to develop these skills, and more, everyday!" %></span>
+						<span class="quote"><%= " and I continue to develop these skills, and more, everyday!" %>&#42;</span>
 
 				 	<p>Plus, a fist full of gems:</p>
 				 	<p>
 				 		pg, annotate, carrierwave, fog, AWS, pry-rails,<br /> better_errors, binding_of_callers, quiet_assets,<br />rails-footnotes, test-unit, ruby-prof, httparty, nokogiri
 				 	</p>
-
-						<p id="disclaimer">
-							&#42;Solidly versed in these web technologies:
-						</p>
 				 </div><!-- End full-stack-->
 
 					</div><!-- third-slide-content-->
@@ -110,14 +106,11 @@ Completed: -->
 				<a class="button" id="btn-3" data-slide="4"><img class="down-arrow" id="down-arrow-3"></a>
 				<span class="slide-title"><a class="main-question" id="question-3">What Do Ya Know?</a></span>
 			 </div>
-
-
 			</div><!-- End Slide 3 -->
 
 <!-- ======  PROJECTS =======  -->
 
 			<div class="slide" id="slide4" data-slide="4" data-stella-background-ratio="0.5">
-				<!-- <div class="container"> -->
 					<div class="fourth-slide-content">
 
 						<div id="screenshots">
@@ -157,11 +150,9 @@ Completed: -->
 							</div><!-- End beautiflow light-box -->
 
 					  </div><!-- End screenshots -->
-					<!-- <div class="clear"></div> -->
 					</div><!-- End fourth-slide-content -->
 
 				 <div id="question-panel-4">
-					<!-- <span class="slide-title" id="question-4">Projects</span> -->
 					<span class="slide-title"><a class="main-question" id="question-4">Projects</a></span>
 				</div>
 
@@ -176,9 +167,9 @@ Completed: -->
 <!-- ======  RESUME =======  -->
 
 		<div class="container">
-			<div id="resume">
-			<h2>Derrick Lannaman</h2>
-		  <h2>derricklannaman@gmail.com | github.com/derricklannaman<br />
+			<div class="resume">
+			<h2 id="my-name">Derrick Lannaman</h2>
+		  <h2 class="contact-info">derricklannaman@gmail.com | <%= link_to "github.com/derricklannaman", "http://www.github.com/derricklannaman", :target => 'blank', :alt => "derricklannaman.com" %><br />
 		  		114 East Marshall Street,  Hempstead, NY 11550 |  516-581-5087</h2>
 
 			 <h2>Full Stack Web Developer | Entry Level</h2>
@@ -188,25 +179,25 @@ Completed: -->
 
 		  <h2>Professional experience</h2>
 				<p>
-					Web Development Immersive Program @ General Assembly    October 2012 — December 2012
+					Web Development Immersive Program, @General Assembly <span>October 2012 — December 2012</span>
 				</p>
-			<ul>
+			<!-- <ul> -->
 				<li>
 					A rigorous 9 week (full-time) training program that provides the technical and practical knowledge of full-stack web development.
 				</li>
 				<li>
 					Core technologies include: HTML5, CSS3, Javascript &amp; jquery, AJAX, Git, Postgresql, and Ruby and Ruby on Rails.
 				</li>
-			</ul>
+			<!-- </ul> -->
 
 			<h2>Entrepreneurial experience</h2>
 				<p>
-					Texas Crazy Wings Inc.    Owner/Operator      July 2007 — November 2009
+					Texas Crazy Wings Inc.,    Owner/Operator
+					<span>July 2007 — November 2009</span><p/>
+				<p>BreedLove Salon.,   Co-Owner
+					<span>May 2000 — July 2007</span>
 				</p>
-				<p>
-					BreedLove Salon.   Co-Owner        May 2000 — July 2007
-				</p>
-				<ul>
+			<!-- 	<ul> -->
 					<li>
 						Created and developed two businesses from concept to store opening.
 					</li>
@@ -217,7 +208,7 @@ Completed: -->
 						Possess effective management and leadership skills in managing a team of up to 12 staff members.
 					</li>
 					<li>
-						Successfully operated Breedlove Salon for over 10 years.
+						Successfully operated Breedlove Salon for over 12 years.
 					</li>
 					<li>
 						Created and established policy, procedures and operational standards for small business startup
@@ -228,16 +219,14 @@ Completed: -->
 					<li>
 						In charge of product inventory, vendor management and daily operation of unit
 					</li>
-				</ul>
+	<!-- 			</ul> -->
 
 			<h2> Work experience</h2>
 			<p>
-				Procare LTC, Inc.
+				Procare LTC, Inc.<br/>
+				Pharmacy Billing Technician      <span>September 2011 — October 2012</span>
 			</p>
-			<p>
-				Pharmacy Billing Technician      September 2011 — October 2012
-			</p>
-				<ul>
+				<!-- <ul> -->
 					<li>
 						Resolved billing issues and rejections according to operating procedures.
 					</li>
@@ -247,11 +236,10 @@ Completed: -->
 					<li>
 						Settled monthly cycle medication billing claims and processed reorders.
 					</li>
-				</ul>
+				<!-- </ul> -->
 
 			<h2>Education</h2>
-			<h2>Adelphi University &amp; Morehouse College</h2>
-				<p>in pursuit of a B.S. in Business Administration</p>
+			<p>Adelphi University &amp; Morehouse College (in pursuit of a B.S. in Business Administration)</p>
 
 			</div><!-- End Resume -->
 		</div><!-- End resume Container -->
@@ -259,7 +247,9 @@ Completed: -->
 
 			<!-- =============== 		START FOOTER 		 =============== -->
 		<footer>
-			<p class="disclaimer">&#42;to varying degrees(truth in advertising)</p>
+			<p class="disclaimer">
+				&#42;Solidly versed in these web technologies to varying degrees (truth in advertising)
+			</p>
 		</footer>
 		</div><!-- End container -->
 	</body>
