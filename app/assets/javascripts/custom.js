@@ -69,7 +69,6 @@ function show_slide4(){
       height:   '100%'
     });
  $('.fourth-slide-content').fadeIn(1500);
- // $('.view-project').fadeOut(700);
 }
 
 function show_slide3(){
