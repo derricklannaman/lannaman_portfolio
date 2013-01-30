@@ -1,0 +1,145 @@
+<!--
+Project Name: JavaScript Calculator
+Client: The Lannaman Reclaimation Project
+Author: Derrick Lannaman
+Developed for WDI project Oct. 31, 2012
+Version: 1.0
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Calculator</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Wallpoet' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+
+
+
+  <link rel="stylesheet" type="text/css" href="template.css">
+
+  <!-- // <script src="jquery-1.8.2.js"></script> -->
+  <script src="template.js"></script>
+</head>
+<body>
+  <head>
+    <h1>Javascript Calculator II <br/> <span> aka javascript gone wild</span></h1>
+  </head>
+
+  <div id="calc_container">
+    <div id="inner_container">
+    <div id="display" class="display_window"></div>
+
+    <div id="power_light">
+      <div id="shine"></div>
+    </div>
+
+    <div id="on_off" class="button_row">
+      <div id="on"  class="button_status">
+        <div class="raised_button_effect">ON
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="off" class="button_status">
+        <div class="raised_button_effect">OFF
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="riddle"  class="button_status">
+        <div class="raised_button_effect">?
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="dot"   class="button_status">
+        <div class="raised_button_effect"> .
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="clear"   class="button_status">
+        <div class="raised_button_effect"> C
+        </div><!-- end #raised_button_effect -->
+      </div>
+    </div><!-- end on/off -->
+    <div id="num_7-8-9" class="button_row">
+      <div id="seven"   class="calc_button">
+        <div class="raised_button_effect">7
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="eight"   class="calc_button">
+        <div class="raised_button_effect">8
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="nine"    class="calc_button">
+        <div class="raised_button_effect">9
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="divide"  class="button_ops">
+        <div class="button_ops_raised_effect">/
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="percent" class="button_ops">
+        <div class="button_ops_raised_effect">%
+        </div><!-- end #raised_button_effect -->
+      </div>
+    </div><!-- end 789 -->
+    <div id="num_4-5-6"   class="button_row">
+      <div id="four"      class="calc_button">
+        <div class="raised_button_effect">4
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="five"      class="calc_button">
+        <div class="raised_button_effect">5
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="six"       class="calc_button">
+        <div class="raised_button_effect">6
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="multiply"  class="button_ops">
+        <div class="button_ops_raised_effect">x
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="subtract"  class="button_ops">
+        <div class="button_ops_raised_effect">-
+        </div><!-- end #raised_button_effect -->
+      </div>
+    </div><!-- end 456 -->
+    <div id="num_1-2-3" class="button_row_bottom">
+      <div id="one"     class="calc_button">
+        <div class="raised_button_effect">1
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="two"     class="calc_button">
+        <div class="raised_button_effect">2
+        </div><!-- end #raised_button_effect -->
+      </div>
+      <div id="three"   class="calc_button">
+        <div class="raised_button_effect">3
+        </div><!-- end #raised_button_effect -->
+      </div>
+
+      <div id="large_buttons">
+        <div id="plus" class="button_big">
+        <div class="button_big_raised_effect">+
+        </div><!-- end #raised_button_effect -->
+        </div>
+        <div id="equal" class="button_big">
+        <div class="button_big_raised_effect">=
+        </div><!-- end #raised_button_effect -->
+        </div>
+
+      </div><!-- end large_buttons -->
+        <div id="handcrafted">
+          Handcrafted by Derrick Lannaman,   <span id="powered">Powered @GA</span>
+        </div><!-- end handcrafted -->
+
+    </div><!-- end 123 -->
+
+      <div id="calc_shadow">
+        <%= link_to(image_tag('shadow_slider.png', id: 'shadow', :alt => "bottom shadow", width: "600px")) %>
+      </div>
+  </div><!-- end inner_container -->
+
+  </div><!-- end app-container -->
+</body>
+</html>

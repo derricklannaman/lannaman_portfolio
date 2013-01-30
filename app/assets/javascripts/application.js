@@ -5,6 +5,7 @@
 //= require 'jquery.easing.1.3.js'
 //= require 'waypoints.js'
 //= require 'js.js'
+//= require 'template.js'
 //= require 'custom'
 
 
