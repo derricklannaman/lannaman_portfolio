@@ -7,9 +7,9 @@ Version: 1.0
 */
 
 /*LAYOUT - overall calc & display window*/
-html {
-	background: url('leather_1.png') no-repeat center center fixed;
-  background-size:	cover;
+body {
+	/*background: url('leather_1.png') no-repeat center center fixed;*/
+  /*background-size:	cover;*/
 }
 
 h1 {
@@ -20,8 +20,13 @@ h1 {
 	text-shadow:	1px 1px 30px #000;
 }
 
-h1 span {
+h1 p {
 font-size: 20px;
+margin-left: 67px;
+}
+
+h1 span {
+  font-size: 18px;
 }
 
 #calc_container {

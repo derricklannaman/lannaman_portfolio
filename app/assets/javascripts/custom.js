@@ -31,6 +31,7 @@ $(function(){
  $('#beautiflow-light-box').hover(show_beautiflow_caption, hide_beautiflow_caption);
  $('#foodie-light-box').hover(show_foodie_caption, hide_foodie_caption);
  $('#susunami-light-box').hover(show_susunami_caption, hide_susunami_caption);
+ $('#calculator-light-box').hover(show_calculator_caption, hide_calculator_caption);
 
 });
 
@@ -46,6 +47,14 @@ $(function() {
 
 
 // Projects panel => reveals captions when hovering over images
+
+function show_calculator_caption(){
+  $('#calculator_caption').slideDown(500);
+}
+function hide_calculator_caption(){
+  $('#calculator_caption').slideUp(500);
+}
+
 function show_susunami_caption(){
   $('#susunami-caption').slideDown(500);
 }

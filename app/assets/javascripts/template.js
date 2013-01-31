@@ -14,11 +14,12 @@ var operator = null
 var total = 0;
 
 $(function(){
-	$('body').hide().fadeIn(1000);
-	// $('h1').hide().slideDown(1500);
+	$('#calc_container').hide().delay(100).fadeIn(1000);
+
 	$('.button_row').hide().slideDown(2500);
+	$('.button_row_bottom').hide().delay(2500).fadeIn(1500);
 	$('#handcrafted').hide().fadeIn(3000);
-	$('#shadow').hide().delay(2000).fadeIn(3000);
+	$('#shadow').hide().delay(5000).fadeIn(1000);
 // Button Behavor
 	$('#on').click(power_on);
 	$('#on').click(power_light_on);
@@ -34,10 +35,10 @@ $(function(){
 	// Clicking
 	$('#clear').click(clear_display);
 	$('#riddle').click(riddle);
-	$('.button').click(light_button);
+	$('.calc_button').click(light_button);
 	$('#equal').click(clear_light);
 // Numeric Operations
-	$('.button').click(get_num);
+	$('.calc_button').click(get_num);
 	$('#plus').click(plus);
 	$('#subtract').click(subtract);
 	$('#multiply').click(multiply);
@@ -166,14 +167,14 @@ function light_button(){
 }
 // Removes backlighting when "equal button" is pressed
 function clear_light(){
-	$('.button').css({'background-color': '#C9D2D7',
+	$('.calc_button').css({'background-color': '#C9D2D7',
 										'color': '#1D007B',
 										'text-shadow': 'none'});
 }
 
 // Misc Button behavior
 function riddle(){
-	$('#display').text("Believe in Your Fuckin' Self.");
+	$('#display').text("Believe in Your Self.");
 	$('#display').css({'font-size': '18px',
 											'text-align': 'center',
 										});
@@ -185,7 +186,6 @@ function clear_display(){
 
 // ISSUES / BROKEN IDEAS
 
-// when dividing a lower # by a higher #, how do you limit the decimal places
 
 
 

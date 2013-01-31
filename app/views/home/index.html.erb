@@ -140,12 +140,11 @@ Completed: -->
 								</div><!-- End light-box-caption -->
 							</div><!-- End foodie light-box -->
 
-							<div class="light-box">
-								<%= link_to(image_tag('beautiflow_image.jpg', :alt => "beautiflow app screenshot",  class: "project"), @beautiflow_url, :target => "_blank")  %>
-								<div class="light-box-caption" id="4">
-										<h3>Beautiflow 4</h3>
-										<p>Final, individual project @GA<br />
-																				alpha development</p>
+							<div class="light-box" id="calculator-light-box">
+								<%= link_to(image_tag('js_calc_screenshot.gif', class: "project", id: "calc_image" ), calculator_path)  %>
+								<div class="light-box-caption" id="calculator_caption">
+										<h3>CSS/Javascript Calculator experiment</h3>
+										<p>a pure css/javascript(no images) calc w/ single digit operands</p>
 								</div><!-- End light-box-caption -->
 							</div><!-- End beautiflow light-box -->
 
