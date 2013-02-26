@@ -9,247 +9,223 @@ Completed: -->
 		<meta charset="utf-8">
 		<meta name="description" content="Your description goes here">
 		<meta name="keywords" content="one, two, three">
-
 		<title>The Lannaman Reclamation Project</title>
-
 	</head>
 	<body>
-		<!-- Navigation is located in shared  -->
-
-			<!-- =============== 		START SECTION 	 =============== -->
-	<!-- <div class="container"> -->
-			<div class="slide" id="slide1" data-slide="1" data-stella-background-ratio="0.5">
-
-				<div class="container">
-					<div class="first-slide-content">
-						<h1 class="intro">Hello. I am Derrick</h1>
-					  <p>
-							 &raquo;Full-stack Web Developer<br/>
-								<span>Web Development Immersive(General Assembly) Alumni<br /></span>
-								&raquo;Two-time Entreprenuer<br />
-								<span>Chaser of Dreams</span>
-						 </p>
-
-							<p>
-								My passion is the result of when web development dreams, entreprenuerial energy, the hunger for learning more, and raw determination collide.
-							</p>
-					</div><!-- End first-slide-content-->
-				</div><!-- End container-->
-
-			<div id="question-panel-1">
-					<a class="button"  data-slide="2"><img class="down-arrow" id="down-arrow-1"></a>
-					<a class="slide-title"><p class="main-question" id="question-1">Who am I?</p></a>
-			</div>
+<!-- ==============		START SECTION 	 ===============
+===================  Start Slide One  ================ -->
 
 
-
-			</div><!-- End Slide 1 -->
-
-<!-- =============  -->
-
-			<div class="slide" id="slide2" data-slide="2" data-stella-background-ratio="0.5">
-
-
-				<div class="container">
-					<div class="second-slide-content">
-					<h1 class="intro">..doing in a place like this?</h1>
-						<p>
-							It started when my second business, Texas Crazy Wings needed a simple website. I had neither the time, nor most frustratingly, the basic knowledge of how to create it myself.<br />
-							<br />
-							So, I hired a designer who was able to translate <em>my concepts and ideas</em> into a website and thus, a seed was sown. Fast-forward a few years, and that small seed had grown into a full-fledged bloom of desire to become a full stack developer and turn ideas into living, breathing applications.
-						</p>
-					</div><!-- End second-slide-content-->
-				</div><!-- End container -->
-
-			<div id="question-panel-2">
-				<a class="button" data-slide="3"><img class="down-arrow" id="down-arrow-2"></a>
-				<span class="slide-title"><a class="main-question" id="question-2">What's a nice fella like me...</a></span>
-			</div>
-
-			</div><!-- End Slide 2 -->
-
-<!-- =============  -->
-
-			<div class="slide" id="slide3" data-slide="3" data-stella-background-ratio="0.5">
-
-
-				<div class="container">
-					<div class="third-slide-content">
-					<h1 class="intro">The &#64;full_stack</h1>
-
-					<div id="do-block">
-						<code> <!-- This section creates the "code block" on slide3 -->
-							 &lt;&#37; <span class="syntax-highlight1">&#64;full_stack</span>.each <span class="syntax-highlight">do</span> &#124;<span class="syntax-highlight1">skill</span>&#124;&#37;&gt; <br/>
-							 	 &nbsp; &nbsp;<span>"#&#123;</span>&nbsp;<button id="result-btn">Get Skills</button>&nbsp;<span>&#125;"</span>
-							 	  <br/>
-							 &lt;&#37; <span class="syntax-highlight">end</span> &#37;&gt;
-						</code>
-				 </div>
-
-					<div id="full-stack">
-						<span class="quote"><%= @quote %></span>
-						<%-	@full_stack.each do |skill| %>
-							 	<span id="skill"><%=	skill %></span>
-						<% end %>
-						<span class="quote"><%= " and I continue to develop these skills, and more, everyday!" %>&#42;</span>
-
-				 	<p>Plus, a fist full of gems:</p>
-				 	<p>
-				 		pg, annotate, carrierwave, fog, AWS, pry-rails,<br /> better_errors, binding_of_callers, quiet_assets,<br />rails-footnotes, test-unit, ruby-prof, httparty, nokogiri
-				 	</p>
-				 </div><!-- End full-stack-->
-
-					</div><!-- third-slide-content-->
-				</div><!-- End container -->
-
-			 <div id="question-panel-3">
-				<a class="button" id="btn-3" data-slide="4"><img class="down-arrow" id="down-arrow-3"></a>
-				<span class="slide-title"><a class="main-question" id="question-3">What Do Ya Know?</a></span>
-			 </div>
-			</div><!-- End Slide 3 -->
-
-<!-- ======  PROJECTS =======  -->
-
-			<div class="slide" id="slide4" data-slide="4" data-stella-background-ratio="0.5">
-					<div class="fourth-slide-content">
-
-						<div id="screenshots">
-							<div class="light-box" id="beautiflow-light-box">
-								<%= link_to(image_tag('beautiflow_image.jpg', :alt => "beautiflow app screenshot",  class: "project"), @beautiflow_url, :target => "_blank")  %>
-								<div class="light-box-caption" id="beautiflow-caption">
-										<h3>Beautiflow.me</h3>
-										<p>Final, individual project @GA</p>
-								</div><!-- End light-box-caption -->
-							</div><!-- End beautiflow light-box -->
-
-
-							<div class="light-box" id="susunami-light-box">
-								<%= link_to(image_tag('susunami-dark.png', :alt => "susunami app screenshot",  class: "project"), @susunami_url, :target => "_blank")  %>
-								<div class="light-box-caption" id="susunami-caption">
-										<h3>susunami</h3>
-										<p>Personal project, (in development)</p>
-								</div><!-- End light-box-caption -->
-							</div><!-- End susunami light-box -->
-
-
-							<div class="light-box" id="foodie-light-box">
-								<%= link_to(image_tag('foodie_image.png', :alt => "foodie app screenshot",  class: "project"), @foodie_url, :target => "_blank")  %>
-								<div class="light-box-caption" id="foodie-caption">
-										<h3>Foodie</h3>
-										<p>Group project @GA</p>
-								</div><!-- End light-box-caption -->
-							</div><!-- End foodie light-box -->
-
-							<div class="light-box" id="calculator-light-box">
-								<%= link_to(image_tag('js_calc_screenshot.gif', class: "project", id: "calc_image" ), calculator_path)  %>
-								<div class="light-box-caption" id="calculator_caption">
-										<h3>CSS/Javascript Calculator experiment</h3>
-										<p>a pure css/javascript(no images) calc w/ single digit operands</p>
-								</div><!-- End light-box-caption -->
-							</div><!-- End beautiflow light-box -->
-
-					  </div><!-- End screenshots -->
-					</div><!-- End fourth-slide-content -->
-
-				 <div id="question-panel-4">
-					<span class="slide-title"><a class="main-question" id="question-4">Projects</a></span>
-				</div>
-
-
-
-			</div><!-- End Slide 4 -->
-
-
-
-			<div class="slide" id="slide5" data-slide="5" data-stella-background-ratio="0.5">
-
-<!-- ======  RESUME =======  -->
-
-		<!-- <div class="container"> -->
-			<div class="resume">
-			<h2 id="my-name">Derrick Lannaman</h2>
-		  <h2 class="contact-info">derricklannaman@gmail.com | <%= link_to "github.com/derricklannaman", "http://www.github.com/derricklannaman", :target => 'blank', :alt => "derricklannaman.com" %><br />
-		  		114 East Marshall Street,  Hempstead, NY 11550 |  516-581-5087</h2>
-
-			 <h2>Full Stack Web Developer | Entry Level</h2>
-				<p>
-					Passionate and highly-motivated to learn,  Jr. developer with solid experience in HTML, CSS, javascript and the Ruby on Rails framework. Strong communication and interpersonal skills with a demonstrated entrepreneurial spirit with the ability to work as a member of a team.
-				</p>
-
-		  <h2>Professional experience</h2>
-				<p>
-					Web Development Immersive Program, @General Assembly <span>October 2012 — December 2012</span>
-				</p>
-			<!-- <ul> -->
-				<li>
-					A rigorous 9 week (full-time) training program that provides the technical and practical knowledge of full-stack web development.
-				</li>
-				<li>
-					Core technologies include: HTML5, CSS3, Javascript &amp; jquery, AJAX, Git, Postgresql, and Ruby and Ruby on Rails.
-				</li>
-			<!-- </ul> -->
-
-			<h2>Entrepreneurial experience</h2>
-				<p>
-					Texas Crazy Wings Inc.,    Owner/Operator
-					<span>July 2007 — November 2009</span><p/>
-				<p>BreedLove Salon.,   Co-Owner
-					<span>May 2000 — July 2007</span>
-				</p>
-			<!-- 	<ul> -->
-					<li>
-						Created and developed two businesses from concept to store opening.
-					</li>
-					<li>
-						Oversaw the design, development and construction of Breedlove Salon LLC and Texas Crazy Wings, Inc.
-					</li>
-					<li>
-						Possess effective management and leadership skills in managing a team of up to 12 staff members.
-					</li>
-					<li>
-						Successfully operated Breedlove Salon for over 12 years.
-					</li>
-					<li>
-						Created and established policy, procedures and operational standards for small business startup
-					</li>
-					<li>
-						Responsible for personnel decisions relating to hiring, job training, payroll, and terminations
-					</li>
-					<li>
-						In charge of product inventory, vendor management and daily operation of unit
-					</li>
-	<!-- 			</ul> -->
-
-			<h2> Work experience</h2>
+	<div class="slide" id="slide1" data-slide="1" data-stella-background-ratio="0.5">
+		<div class="container">
+			<div class="first-slide-content">
+			<h1 class="intro">Hello. I am Derrick</h1>
+		  <p>
+			 &raquo;Full-stack Web Developer<br/>
+				<span>Web Development Immersive(General Assembly) Alumni<br /></span>
+				&raquo;Two-time Entreprenuer<br />
+				<span>Chaser of Dreams</span>
+			</p>
 			<p>
-				Procare LTC, Inc.<br/>
-				Pharmacy Billing Technician      <span>September 2011 — October 2012</span>
+				My passion is the result of when web development dreams, entreprenuerial energy, the hunger for learning more, and raw determination collide.
 			</p>
-				<!-- <ul> -->
-					<li>
-						Resolved billing issues and rejections according to operating procedures.
-					</li>
-					<li>
-						Enter and set up new patient admissions profiles and corresponding payment plans.
-					</li>
-					<li>
-						Settled monthly cycle medication billing claims and processed reorders.
-					</li>
-				<!-- </ul> -->
+			</div><!-- End first-slide-content-->
+		</div><!-- End container-->
 
-			<h2>Education</h2>
-			<p>Adelphi University &amp; Morehouse College (in pursuit of a B.S. in Business Administration)</p>
+		<div id="question-panel-1">
+			<a class="button"  data-slide="2"><img class="down-arrow" id="down-arrow-1"></a>
+			<a class="slide-title"><p class="main-question" id="question-1">Who am I?</p></a>
+		</div>
+	</div><!-- End Slide 1 -->
 
-			</div><!-- End Resume -->
-		<!-- </div>End resume Container -->
+<!-- =================================================
+===================  Start Slide Two  ================ -->
 
-
-			<!-- =============== 		START FOOTER 		 =============== -->
-		<footer>
-			<p class="disclaimer">
-				&#42;Solidly versed in these web technologies to varying degrees (truth in advertising)
+	<div class="slide" id="slide2" data-slide="2" data-stella-background-ratio="0.5">
+		<div class="container">
+			<div class="second-slide-content">
+			<h1 class="intro">..doing in a place like this?</h1>
+			<p>
+				It started when my second business, Texas Crazy Wings needed a simple website. I had neither the time, nor most frustratingly, the basic knowledge of how to create it myself.<br />
+				<br />
+				So, I hired a designer who was able to translate <em>my concepts and ideas</em> into a website and thus, a seed was sown. Fast-forward a few years, and that small seed had grown into a full-fledged bloom of desire to become a full stack developer and turn ideas into living, breathing applications.
 			</p>
-		</footer>
+			</div><!-- End second-slide-content-->
 		</div><!-- End container -->
+
+		<div id="question-panel-2">
+			<a class="button" data-slide="3"><img class="down-arrow" id="down-arrow-2"></a>
+			<span class="slide-title"><a class="main-question" id="question-2">What's a nice fella like me...</a></span>
+		</div>
+	</div><!-- End Slide 2 -->
+
+<!-- ===================================================
+===================  Start Slide Three  ================ -->
+
+	<div class="slide" id="slide3" data-slide="3" data-stella-background-ratio="0.5">
+		<div class="container">
+			<div class="third-slide-content">
+			<h1 class="intro">The &#64;full_stack</h1>
+
+			<div id="do-block">
+				<code> <!-- This section creates the "code block" on slide3 -->
+					&lt;&#37; <span class="syntax-highlight1">&#64;full_stack</span>.each <span class="syntax-highlight">do</span> &#124;<span class="syntax-highlight1">skill</span>&#124;&#37;&gt; <br/>
+					&nbsp; &nbsp;<span>"#&#123;</span>&nbsp;<button id="result-btn">Get Skills</button>&nbsp;<span>&#125;"</span>
+					<br/>
+					&lt;&#37; <span class="syntax-highlight">end</span> &#37;&gt;
+				</code>
+		 	</div>
+			<div id="full-stack">
+				<span class="quote"><%= @quote %></span>
+				<%-	@full_stack.each do |skill| %>
+					 	<span id="skill"><%=	skill %></span>
+				<% end %>
+				<span class="quote"><%= " and I continue to develop these skills, and more, everyday!" %>&#42;</span>
+			 	<p>Plus, a fist full of gems:</p>
+			 	<p>
+			 		pg, annotate, carrierwave, fog, AWS, pry-rails,<br /> better_errors, binding_of_callers, quiet_assets,<br />rails-footnotes, test-unit, ruby-prof, httparty, nokogiri, twilio-ruby, stripe, rspec, haml
+			 	</p>
+		 	</div><!-- End full-stack-->
+			</div><!-- third-slide-content-->
+		</div><!-- End container -->
+
+		<div id="question-panel-3">
+			<a class="button" id="btn-3" data-slide="4"><img class="down-arrow" id="	 down-arrow-3"></a>
+			<span class="slide-title"><a class="main-question" id="question-3">What 		Do Ya Know?</a></span>
+		</div>
+	</div><!-- End Slide 3 -->
+
+<!-- ==============     PROJECTS      ================
+===================  Start Slide Four  ================ -->
+
+	<div class="slide" id="slide4" data-slide="4" data-stella-background-ratio="0.5">
+		<div class="fourth-slide-content">
+		<div id="screenshots">
+
+			<!-- Beautiflow image -->
+			<div class="light-box" id="beautiflow-light-box">
+				<%= link_to(image_tag('beautiflow_image.jpg', :alt => "beautiflow app screenshot",  class: "project"), @beautiflow_url, :target => "_blank") %>
+				<div class="light-box-caption" id="beautiflow-caption">
+					<h3>Beautiflow.me</h3>
+					<p>Final, individual project @GA</p>
+				</div><!-- End light-box-caption -->
+			</div><!-- End Beautiflow light-box -->
+
+			<!-- Susunami/Susubank image -->
+			<div class="light-box" id="susunami-light-box">
+				<%= link_to(image_tag('susunami-dark.png', :alt => "susunami app screenshot",  class: "project"), @susunami_url, :target => "_blank")  %>
+				<div class="light-box-caption" id="susunami-caption">
+					<h3>susunami</h3>
+					<p>Personal project, (in development)</p>
+				</div><!-- End light-box-caption -->
+			</div><!-- End Susunami light-box -->
+
+			<!-- Foodie image -->
+			<div class="light-box" id="foodie-light-box">
+				<%= link_to(image_tag('foodie_image.png', :alt => "foodie app screenshot",  class: "project"), @foodie_url, :target => "_blank")  %>
+				<div class="light-box-caption" id="foodie-caption">
+					<h3>Foodie</h3>
+					<p>Group project @GA</p>
+				</div><!-- End light-box-caption -->
+			</div><!-- End Foodie light-box -->
+
+			<!-- JS Calculator -->
+			<div class="light-box" id="calculator-light-box">
+				<%= link_to(image_tag('js_calc_screenshot.gif', class: "project", id: "calc_image" ), calculator_path)  %>
+				<div class="light-box-caption" id="calculator_caption">
+					<h3>CSS/Javascript Calculator experiment</h3>
+					<p>a pure css/javascript(no images) calc w/ single digit operands</p>
+				</div><!-- End light-box-caption -->
+			</div><!-- End JS Calculator light-box -->
+
+		</div><!-- End screenshots -->
+		</div><!-- End fourth-slide-content -->
+
+	 	<div id="question-panel-4">
+			<span class="slide-title"><a class="main-question" id="question-4">				Projects</a></span>
+		</div>
+	</div><!-- End Slide 4 -->
+
+<!-- ==============      RESUME        ================
+===================  Start Slide Five  ================ -->
+
+	<div class="slide" id="slide5" data-slide="5" data-stella-background-ratio="0.5">
+
+	<div class="resume">
+		<h2 id="my-name">Derrick Lannaman</h2>
+		<h2 class="contact-info">derricklannaman@gmail.com | <%= link_to "github.com/derricklannaman", "http://www.github.com/derricklannaman", :target => 'blank', :alt => "derricklannaman.com" %><br />
+			114 East Marshall Street,  Hempstead, NY 11550 |  516-581-5087</h2>
+
+		<h2>Full Stack Web Developer | Entry Level</h2>
+		<p>
+			Passionate and highly-motivated to learn,  Jr. developer with solid experience in HTML, CSS, javascript and the Ruby on Rails framework. Strong communication and interpersonal skills with a demonstrated entrepreneurial spirit with the ability to work as a member of a team.
+		</p>
+
+		<h2>Professional experience</h2>
+		<p>
+			Web Development Immersive Program, @General Assembly <span>October 2012 — December 2012</span>
+		</p>
+			<li>
+				A rigorous 9 week (full-time) training program that provides the technical and practical knowledge of full-stack web development.
+			</li>
+			<li>
+				Core technologies include: HTML5, CSS3, Javascript &amp; jquery, AJAX, Git, Postgresql, and Ruby and Ruby on Rails.
+			</li>
+		<h2>Entrepreneurial experience</h2>
+		<p>
+			Texas Crazy Wings Inc.,    Owner/Operator
+			<span>July 2007 — November 2009</span>
+		<p/>
+		<p>BreedLove Salon.,   Co-Owner
+			<span>May 2000 — July 2007</span>
+		</p>
+			<li>
+				Created and developed two businesses from concept to store opening.
+			</li>
+			<li>
+				Oversaw the design, development and construction of Breedlove Salon LLC and Texas Crazy Wings, Inc.
+			</li>
+			<li>
+				Possess effective management and leadership skills in managing a team of up to 12 staff members.
+			</li>
+			<li>
+				Successfully operated Breedlove Salon for over 12 years.
+			</li>
+			<li>
+				Created and established policy, procedures and operational standards for small business startup
+			</li>
+			<li>
+				Responsible for personnel decisions relating to hiring, job training, payroll, and terminations
+			</li>
+			<li>
+				In charge of product inventory, vendor management and daily operation of unit
+			</li>
+		<h2> Work experience</h2>
+		<p>
+			Procare LTC, Inc.<br/>
+			Pharmacy Billing Technician      <span>September 2011 — October 2012</span>
+		</p>
+			<li>
+				Resolved billing issues and rejections according to operating procedures.
+			</li>
+			<li>
+				Enter and set up new patient admissions profiles and corresponding payment plans.
+			</li>
+			<li>
+				Settled monthly cycle medication billing claims and processed reorders.
+			</li>
+		<h2>Education</h2>
+			<p>Adelphi University &amp; Morehouse College (in pursuit of a B.S. in 		 Business Administration)
+			</p>
+	</div><!-- End Resume -->
+
+<!-- ==============================================
+===================  Start Footer  ================ -->
+	<footer>
+		<p class="disclaimer">
+			&#42;Solidly versed in these web technologies to varying degrees (truth in advertising)
+		</p>
+	</footer>
+	</div><!-- End container -->
 	</body>
 </html>
