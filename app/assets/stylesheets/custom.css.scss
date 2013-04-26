@@ -429,7 +429,7 @@ code {
  ********************/
 
 #slide5 {
-     background-image:url('whitediamond.png');
+     background-image:url('whitediamond.png') center-center;
      height:   120%;
      font-family: 'Cantata One', serif;
      padding-left: 40px;
@@ -441,6 +441,10 @@ code {
      font-size: 38px;
 }
 
+#hack_stack {
+     margin-left: 125px;
+     list-style: none;
+}
 .contact-info {
      font-size: 20px;
 }
@@ -461,6 +465,12 @@ code {
           font-family: 'Shadows Into Light', cursive;
 
      }
+}
+
+.highlights {
+     font-size: 14px;
+     font-weight: bolder;
+     font-style: italic;
 }
 
 .resume h2 {
